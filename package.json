@@ -1,0 +1,32 @@
+{
+  "name": "coursework",
+  "version": "1.0.0",
+  "description": "website for beauty salon",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anna",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "handlebars-loader": "^1.7.1",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "bootstrap-4-grid": "^3.4.0",
+    "tiny-slider": "^2.9.4"
+  }
+}

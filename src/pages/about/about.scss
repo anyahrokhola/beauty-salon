@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+/* ----------------- ABOUT ----------------*/
+.about {
+  overflow: hidden;
+  position: relative;
+  padding: 0 30px;
+
+  .about-information {
+    margin-top: 150px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+  }
+
+  .block-background {
+    width: 500px;
+    height: 780px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #f6f6f6;
+  }
+
+  .text {
+    margin: 15px 0 30px;
+    font-size: 14px;
+    z-index: 10;
+
+    &.important {
+      font-weight: 700;
+      width: 550px;
+    }
+  }
+
+  .seperator {
+    width: 7px;
+    height: auto;
+    background-color: black;
+    margin-right: 30px;
+  }
+
+  .important-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .signature {
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+    img {
+      width: 150px;
+      height: 150px;
+      transform: rotate(-15deg);
+      margin-right: 50px;
+
+      @include media-breakpoint-down(lg) {
+        width: 90px;
+        height: 90px;
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .img-block {
+    img {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      @include media-breakpoint-down(lg) {
+        height: 550px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* ----------------- END ABOUT ----------------*/
+
+/* ----------------- TEAM ----------------*/
+.team {
+  margin: 100px 0;
+  padding: 0 100px;
+
+  @include media-breakpoint-down(md) {
+    padding: 0px;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .item {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  .master-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .master-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      height: 350px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 80%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      width: 70%;
+      height: 100%;
+      background-color: #fbe2dc;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        left: 0%;
+        height: 50% !important;
+      }
+    }
+
+    &.hanga {
+      &::before {
+        background-color: #fbe2dc;
+      }
+    }
+
+    &.banita {
+      &::before {
+        height: 60%;
+        background-color: rgba(33, 150, 243, 0.2);
+      }
+    }
+
+    &.sahur {
+      &::before {
+        height: 45%;
+        background-color: #e6dcfb;
+
+        @include media-breakpoint-down(lg) {
+          height: 40%;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+
+      @include media-breakpoint-down(lg) {
+        height: 300px;
+        width: 200px;
+      }
+    }
+  }
+
+  .name {
+    margin: 30px 0 15px;
+  }
+}
+
+/* ----------------- END TEAM ----------------*/

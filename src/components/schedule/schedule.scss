@@ -1,0 +1,39 @@
+/* ----------------- SCHEDULE ----------------*/
+.schedule {
+  margin-left: 30px;
+
+  .img-block {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+
+    @include media-breakpoint-down(sm) {
+      width: 40px;
+      height: 40px;
+      margin: 25px 0;
+    }
+  }
+
+  .schedule-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .text {
+    color: #7a7a7a;
+  }
+
+  .description-wrapper {
+    margin-left: 30px;
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

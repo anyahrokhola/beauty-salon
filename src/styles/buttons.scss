@@ -1,0 +1,39 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 24px 43px;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+.btn.btn-primary {
+  color: white;
+  background-color: black;
+}
+
+.btn.btn-primary:hover::before {
+  left: 0;
+}
+
+.btn.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 500ms;
+  background-color: #888;
+}
+
+.btn.btn-main {
+  min-width: 200px;
+}
